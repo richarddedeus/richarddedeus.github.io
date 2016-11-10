@@ -1,0 +1,2 @@
+# richarddedeus.github.io
+gitpage
