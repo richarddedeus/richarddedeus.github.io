@@ -1,20 +1,20 @@
 @import url('https://fonts.gloogleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     background: lightblue;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
-.container{
+
+.container {
     position: relative;
     width: 100%;
     max-width: 1000px;
@@ -25,12 +25,14 @@ body{
     grid-template-columns: 1fr 2fr;
     box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
-.container .left-side{
+
+.container .left-side {
     position: relative;
     background: #003147;
     padding: 40px;
 }
-.profileText{
+
+.profileText {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -38,7 +40,8 @@ body{
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-.profileText .imgBx{
+
+.profileText .imgBx {
     position: relative;
     width: 175px;
     height: 175px;
@@ -46,16 +49,17 @@ body{
     overflow: hidden;
     border: 0.5rem solid rgba(0, 217, 255, 0.2);
 }
-.profileText .imgBx img{
+
+.profileText .imgBx img {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
 }
-.profileText h2{
+
+.profileText h2 {
     color: #fff;
     font-size: 1.5em;
     margin-top: 20px;
@@ -64,65 +68,77 @@ body{
     font-weight: 600;
     line-height: 1.4em;
 }
-.profileText h2 span{
+
+.profileText h2 span {
     font-size: 0.8em;
     font-weight: 300;
 }
-.contactInfo{
+
+.contactInfo {
     padding-top: 40px;
 }
-.title{
+
+.title {
     color: #fff;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
     margin-bottom: 20px;
 }
-.contactInfo ul{
+
+.contactInfo ul {
     position: relative;
 }
-.contactInfo ul li{
+
+.contactInfo ul li {
     position: relative;
     list-style: none;
     margin: 10px 0;
-    cursor: pointer;
 }
-.contactInfo ul li .icon{
+
+.contactInfo ul li .icon {
     display: inline-block;
     width: 30px;
     font-size: 18px;
     color: #03a9f4;
 }
-.contactInfo ul li span{
+
+.contactInfo ul li span {
     color: #fff;
     font-weight: 300;
     letter-spacing: 0.9px;
 }
-.contactInfo.education li{
+
+.contactInfo.education li {
     margin-bottom: 15px;
 }
-.contactInfo.education h5{
+
+.contactInfo.education h5 {
     color: #03a9f4;
     font-weight: 500;
 }
-.contactInfo.education h4:nth-child(2){
+
+.contactInfo.education h4:nth-child(2) {
     color: #fff;
     font-size: 15px;
     font-weight: 500;
 }
-.contactInfo.education h4{
+
+.contactInfo.education h4 {
     color: #fff;
     font-weight: 200;
 }
-.contactInfo.language .percent{
+
+.contactInfo.language .percent {
     position: relative;
     width: 100%;
     height: 6px;
     background: #081921;
-    display:block;
+    display: block;
     margin-top: 5px;
 }
-.contactInfo.language .percent div{
+
+.contactInfo.language .percent div {
     position: absolute;
     top: 0;
     left: 0;
@@ -130,46 +146,55 @@ body{
     background: #03a9f4;
 }
 
-.container .right-side{
+.container .right-side {
     position: relative;
     background: #fff;
     padding: 40px;
 }
-.about{
+
+.about {
     margin-bottom: 50px;
 }
-.about:last-child{
+
+.about:last-child {
     margin-bottom: 0;
 }
-.title2{
+
+.title2 {
     color: #003147;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 10px;
     font-weight: 700;
 }
-p{
-    color:#333;
+
+p {
+    color: #333;
     line-height: 1.5em;
 }
-.about .box{
+
+.about .box {
     display: flex;
     flex-direction: row;
     margin: 20px 0;
 }
-.about .box .year_company{
+
+.about .box .year_company {
     min-width: 150px;
 }
-.about .box .year_company h5{
+
+.about .box .year_company h5 {
     text-transform: uppercase;
     color: #848c90;
     font-weight: 600;
 }
-.about .box .text h4{
+
+.about .box .text h4 {
     color: #2a7da2;
     font-size: 16px;
 }
-.skills .box{
+
+.skills .box {
     position: relative;
     width: 100%;
     display: grid;
@@ -177,85 +202,93 @@ p{
     justify-content: center;
     align-items: center;
 }
-.skills .box h4{
+
+.skills .box h4 {
     text-transform: uppercase;
-    color: #848c99;
-    font-weight: 500;
+    color: #ffffff; 
 }
-.skills .box .percent{
+.skills .box .title2 h2 {
+    text-transform: uppercase;
+    color: #ffffff !important; 
+}
+
+.skills .box .percent {
     position: relative;
     width: 100%;
     height: 10px;
     background: #f0f0f0;
 }
-.skills .box .percent div{
+
+.skills .box .percent div {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     background: #03a9f4;
 }
-.social-networks ul{
+
+.social-networks ul {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
-.social-networks ul li{
+
+.social-networks ul li {
     list-style: none;
     color: #333;
     font-weight: 500;
     margin: 10px 0;
 }
-.social-networks ul li .fa-brands{
+
+.social-networks ul li .fa-brands {
     color: #03a9f4;
     font-size: 18px;
     margin-right: 5px;
 }
 
-@media (max-width: 1000px){
-    .container{
+.social-networks ul li a {
+    color: #333;
+    font-size: 18px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.social-networks ul li a:hover{
+    color: #03a9f4;
+    font-size: 18px;
+    margin-right: 5px;
+    text-decoration:underline;
+}
+
+
+
+@media (max-width: 1000px) {
+    .container {
         margin: 10px;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
-    .social-networks{
-        grid-template-columns: repeat(1,1fr);
+    .social-networks {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
-@media(max-width: 600px){
-    .about .box{
+
+@media(max-width: 600px) {
+    .about .box {
         flex-direction: column;
     }
-    .about .box .year_company{
+    .about .box .year_company {
         min-width: 150px;
-        margin-bottom: 5px;;
+        margin-bottom: 5px;
+        ;
     }
-    .social-networks ul{
-        grid-template-columns: repeat(1,1fr);
+    .social-networks ul {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .skills .box{
-        grid-template-columns: repeat(1,1fr);
+    .skills .box {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.container .right-side{
+.container .right-side {
     position: relative;
     background: #fff;
     padding: 40px;
