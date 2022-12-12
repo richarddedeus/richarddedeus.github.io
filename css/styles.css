@@ -293,3 +293,18 @@ p {
     background: #fff;
     padding: 40px;
 }
+
+/*FOOTER*/
+.container .main_footer{
+    width: 100%;
+    display:inline-block;
+    float:left;
+    padding: 10px;
+    background: #003147;
+    text-align: center;
+    color: #fff;
+    font-size: 0.875em;
+}
+.clear{
+    clear: both;
+}
