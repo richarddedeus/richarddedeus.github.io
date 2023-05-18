@@ -6,7 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
 
 body {
     background: lightblue;
@@ -42,6 +42,7 @@ body {
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+
 
 .profileText .imgBx {
     position: relative;
