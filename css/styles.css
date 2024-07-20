@@ -416,7 +416,7 @@ p {
 .container .main_footer{
     width: 100%;
     display:inline-block;
-    float:left;
+    
     padding: 10px;
     background: #003147;
     text-align: center;
