@@ -97,21 +97,50 @@ body {
 }
 
 .profileText .imgBx {
-    position: relative;
+    /* position: relative;
     width: 175px;
     height: 175px;
     border-radius: 50%;
     overflow: hidden;
-    border: 0.5rem solid rgba(0, 217, 255, 0.2);
+    border: 0.5rem solid rgba(0, 217, 255, 0.2); */
+    width: 220px; /* Tamanho externo do círculo */
+  height: 220px;
+  position: relative;
+  border-radius: 50%;
+  background: conic-gradient(
+    from -45deg, /* Gira o gradiente 45 graus para a esquerda */
+    rgb(233, 66, 50) 0deg 90deg,
+    rgb(247, 166, 7) 90deg 180deg,
+    rgb(53, 167, 87) 180deg 270deg,
+    rgb(66, 134, 239) 270deg 360deg
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.profileText .imgBx img {
+.profileText .imgBx::before {
+    content: "";
+    width: 200px; /* Tamanho da borda branca */
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(255, 254, 254); /* Fundo branco interno */
     position: absolute;
+    z-index: 1; /* Fica acima da borda colorida */
+  }
+
+.profileText .imgBx img {
+    /* position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; */
+    width: 180px; /* Tamanho da imagem */
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 2; /* Fica acima da borda branca */
 }
 
 .profileText h2 {
@@ -149,6 +178,10 @@ body {
     position: relative;
     list-style: none;
     margin: 10px 0;
+}
+
+.contactInfo ul li a{
+    text-decoration: none;
 }
 
 .contactInfo ul li .icon {
@@ -237,6 +270,18 @@ p {
 .about .box .year_company {
     min-width: 150px;
 }
+.about .box .image_left{
+display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre a imagem e o texto */
+}
+.project-img {
+    width: 130px; /* Ajuste o tamanho da imagem */
+    object-fit: cover; /* Mantém as proporções da imagem */
+    border-radius: 4px; /* Opcional: para deixar as bordas arredondadas */
+}
+
+
 
 .about .box .year_company h5 {
     text-transform: uppercase;
