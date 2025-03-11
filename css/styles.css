@@ -348,6 +348,13 @@ display: flex;
     font-size: 18px;
     margin-right: 5px;
 }
+.beecrowd{
+    color: #fff;
+    float: left;
+    width: 22px;
+    margin-left: 7px;
+    margin-right: -15px;
+}
 
 .social-networks ul li a {
     color: #333;
