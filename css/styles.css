@@ -191,6 +191,11 @@ body {
     color: #03a9f4;
 }
 
+.skill-icon {
+    color: white;
+    font-size: 3em;
+    margin: 0 13px 20px 0;
+}
 .contactInfo ul li span {
     color: #fff;
     font-weight: 300;
